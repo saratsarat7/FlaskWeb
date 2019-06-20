@@ -1,12 +1,10 @@
 from flask import render_template
 from app import app
 
-
 import sys
 import os
 sys.path.append(os.path.abspath("/media/sarat/Sarat/Development/Python/Flask WebPage/app"))
 from GoogleApi import *
-
 
 @app.route('/')
 @app.route('/index')
