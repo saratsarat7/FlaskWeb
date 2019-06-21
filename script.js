@@ -67,4 +67,3 @@ function getValuesFromAPI() {
 	*/
 return result;
 }
-
