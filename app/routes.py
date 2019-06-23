@@ -16,7 +16,8 @@ def index():
 @app.route('/SpeechApi')
 def page():
     data = process_voice()
-    return "You said : "+data
+    # return "You said : "+data
+    return data
 
 
 @app.route("/multiply/<int:key>/", methods=['GET'])
