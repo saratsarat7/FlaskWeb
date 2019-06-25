@@ -1,4 +1,5 @@
 function fillForm() {
+	//-------------- Claim type--------------------------
 	var claim_type = getValuesFromAPI();
 	if(claim_type == "Invalid Response"){
 		alert("Invalid Response! Please try again");
