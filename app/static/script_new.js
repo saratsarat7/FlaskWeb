@@ -246,6 +246,9 @@ function getValuesFromAPI(element_string) {
 	if (request.status === 200) {
 	  data = request.responseText;
 	}
+	else{
+		data = "Invalid Response";
+	}
 	return data
 }
 
