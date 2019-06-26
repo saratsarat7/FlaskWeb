@@ -239,7 +239,7 @@ function getValuesFromAPI(element_string) {
 	// }
 	// request.send(params);
 
-	request.open('GET', 'http://127.0.0.1:5000/SpeechApi?'+params, false);  // `false` makes the request synchronous
+	request.open('GET', url+params, false);  // `false` makes the request synchronous
 	//request.send(null);
 	request.send();
 
