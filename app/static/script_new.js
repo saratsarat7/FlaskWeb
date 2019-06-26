@@ -11,7 +11,7 @@ function fillForm() {
 	
 	
 	//-------------- Patient name--------------------------
-	var patient_name = getValuesFromAPI();
+	var patient_name = getValuesFromAPI("Please say patient name");
 	var field_pt = document.getElementById("patient_name");
 	field_pt.focus();
 	if(patient_name == "Invalid Response") {
@@ -26,7 +26,7 @@ function fillForm() {
 	}
 	
 	//-------------- DOB--------------------------
-	var dob = getValuesFromAPI();
+	var dob = getValuesFromAPI("Please say Date of Birth");
 	var field_dob = document.getElementById("dob");
 	field_dob.focus();
 	if(dob == "Invalid Response") {
@@ -52,7 +52,7 @@ function fillForm() {
 	
 	
 	//-------------- Patient Address--------------------------
-	var patient_address = getValuesFromAPI();
+	var patient_address = getValuesFromAPI("Please say patient address");
 	var field_pa = document.getElementById("patient_address");
 	field_pa.focus();
 	if(patient_address == "Invalid Response") {
@@ -66,7 +66,7 @@ function fillForm() {
 	}
 
 	//-------------- Insurer ID--------------------------
-	var Insurer_ID = getValuesFromAPI();
+	var Insurer_ID = getValuesFromAPI("Please say Insurer ID");
 	var field_iid = document.getElementById("Insurer_ID");
 	field_iid.focus();
 	if(Insurer_ID == "Invalid Response") {
@@ -80,7 +80,7 @@ function fillForm() {
 	}
 	
 	//-------------- Insurer Name--------------------------
-	var Insured_Name = getValuesFromAPI();
+	var Insured_Name = getValuesFromAPI("Please say Insured Name");
 	var field_iname = document.getElementById("Insured_Name");
 	field_iname.focus();
 	if(Insured_Name == "Invalid Response") {
@@ -94,7 +94,7 @@ function fillForm() {
 	}
 	
 	//-------------- Date of Illness--------------------------
-	var date_of_ill = getValuesFromAPI();
+	var date_of_ill = getValuesFromAPI("Please say the date of illness");
 	var field_dol = document.getElementById("date_of_ill");
 	field_dol.focus();
 	if(date_of_ill == "Invalid Response") {
@@ -108,7 +108,7 @@ function fillForm() {
 	}
 	
 	//-------------- Diag Code--------------------------
-	var diag_code = getValuesFromAPI();
+	var diag_code = getValuesFromAPI("Please say the diagnosis code");
 	var field_dc = document.getElementById("diag_code");
 	field_dc.focus();
 	if(diag_code == "Invalid Response") {
