@@ -1,0 +1,6 @@
+app/cred.json
+temp.mp3
+sounds
+*.pyc
+.flaskenv
+.vscode/*
