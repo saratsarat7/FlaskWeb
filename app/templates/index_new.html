@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Speech based auto-fill form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="text-center">
+		<h2 class ="heading">
+			<b>Speech based auto-fill form</b>
+		</h2>
+	</div>
+	<br>
+	<form class="form-horizontal" action="#">
+	<div class="form-group">
+	<!--
+	<label class="control-label col-sm-2" for="claim_type">Claim Type:</label>
+		<div class="checkbox col-sm-10">
+			<label><input type="checkbox" value="0" id="Medicare">Medicare</label>
+	
+			<label><input type="checkbox" value="1" id="Medicaid">Medicaid</label>
+
+			<label><input type="checkbox" value="2" id="TriCare">TriCare</label>
+
+			<label><input type="checkbox" value="3" id="Group_Health">Group Health</label>
+
+			<label><input type="checkbox" value="4" id="Other">Other</label>
+		</div>
+	</div>
+	-->
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="patient_name">Patient Name:</label>
+		<div class="col-sm-10">
+		  <input type="text" class="form-control" id="patient_name" placeholder="Enter Patient name" value="">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="dob">DOB:</label>
+		<div class="col-sm-10"> 
+		  <input type="text" class="form-control" id="dob" placeholder="Enter dob">
+		</div>
+	  </div>
+	  <!--
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="gender">Sex:</label>
+		<div class="radio col-sm-10">
+			<label><input type="radio" value="0" id="Male">Male</label>
+
+			<label><input type="radio" value="1" id="Female">Female</label>
+		</div>
+	  </div>
+	  -->
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="patient_address">Patient Address:</label>
+		<div class="col-sm-10">
+		  <textarea class="form-control" id="patient_address" placeholder="Enter Patient address"></textarea>
+		</div>
+	  </div>
+	  
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="Insurer_ID">Insurer ID:</label>
+		<div class="col-sm-10"> 
+		  <input type="number" class="form-control" id="Insurer_ID" placeholder="Enter Insurer ID">
+		</div>
+	  </div>
+	  
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="Insured_Name">Insured Name:</label>
+		<div class="col-sm-10"> 
+		  <input type="text" class="form-control" id="Insured_Name" placeholder="Enter Insured Name">
+		</div>
+	  </div>
+	  
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="date_of_ill">Date of Illness:</label>
+		<div class="col-sm-10"> 
+		  <input type="text" class="form-control" id="date_of_ill" placeholder="Enter Date of Illness">
+		</div>
+	  </div>
+	  
+	  <div class="form-group">
+		<label class="control-label col-sm-2" for="diag_code">Diag Codes:</label>
+		<div class="col-sm-10"> 
+		  <input type="text" class="form-control" id="diag_code" placeholder="Enter Diag Codes">
+		</div>
+	  </div>
+	  
+	  <div class="form-group">
+		<table class="table table-condensed">
+			<thead>
+			  <tr>
+				<th>Date of Service</th>
+				<th>Procedure Code</th>
+				<th>Diag Pointer</th>
+				<th>Charge</th>
+				<th>Unit</th>
+			  </tr>
+			</thead>
+		</table>
+		<table class="table table-condensed">
+		<thead>
+			  <tr>
+				<th>From</th>
+				<th>To</th>
+				<th>CPT/HCPS</th>
+				<th>Modifier</th>
+				<th>Unit</th>
+				<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+				<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><input type="text" class="form-control" id="from" placeholder="Enter from date"></td>
+				<td><input type="text" class="form-control" id="to" placeholder="Enter to date"></td>
+				<td><input type="text" class="form-control" id="CPT_HCPS" placeholder="Enter CPT/HCPS"></td>
+				<td><input type="text" class="form-control" id="Modifier" placeholder="Enter Modifier"></td>
+				<td><input type="text" class="form-control" id="Diag_Pointer" placeholder="Enter Diag Pointer"></td>
+				<td><input type="text" class="form-control" id="Charge" placeholder="Enter Charge"></td>
+				<td><input type="text" class="form-control" id="Unit" placeholder="Enter Unit"></td>
+			  </tr>
+			
+			</tbody>
+		</table>
+	  </div>
+	  <div class="form-group">
+		  <div class="col-sm-offset-5 col-sm-10"> 
+			<input type="submit" class="btn btn-primary" value="Auto Fill" onclick="fillForm()">
+		  </div>
+	  </div>
+	  
+	  
+	  
+	</form>
+</div>
+
+</body>
+</html>
